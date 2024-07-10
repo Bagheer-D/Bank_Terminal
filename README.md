@@ -10,3 +10,8 @@
 ```
 https://github.com/Bagheer-D/Bank_Terminal.git
 ```
+## Использование:
+
++ Вы можете опробовать функционал программы. Для этого
+   в файлах masks.py, processing.py и widget.py вы можете
+   вводить ваши данные.
