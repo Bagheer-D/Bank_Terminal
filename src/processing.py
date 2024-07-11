@@ -16,9 +16,9 @@ def filter_by_state(dict_list: list[dict[str, Any]], state: str = "EXECUTED") ->
 
 def sort_by_date(dict_list: list[dict[str, Any]], reverse: bool = True) -> list[dict[str, Any]]:
     """Принимаем на вход список словарей, и возвращаем новый список, где словари отсортированы по убыванию даты"""
-    sorted_list = sorted(dict_list, key=lambda new_dict_list: new_dict_list["date"], reverse=reverse)
+    sorted_list = sorted(dict_list, key=lambda new_dict_list: new_dict_list['date'], reverse=reverse)
     return sorted_list
 
 
-print(filter_by_state(dict_list))
+#print(filter_by_state(dict_list))
 print(sort_by_date(dict_list))
