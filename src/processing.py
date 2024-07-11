@@ -8,7 +8,7 @@ dict_list = [
 ]
 
 
-def filter_by_state(dict_list: list[dict[str, Any]], state: str = "EXECUTED") -> Any:
+def filter_by_state(dict_list: list[dict[str, Any]], state: str = "EXECUTED") -> list[dict[str, Any]]:
     """Принимаем список словарей и значение для ключа, возвращаем новый список словарей,
     где ключ содержит переданное в функцию значение."""
     return [d for d in dict_list if d.get("state") == state]
