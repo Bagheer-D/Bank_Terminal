@@ -4,7 +4,7 @@ from src.processing import filter_by_state, sort_by_date
 
 
 @pytest.mark.parametrize(
-    "list, expected",
+    "test_list, expected",
     [
         (
             [
@@ -19,8 +19,8 @@ from src.processing import filter_by_state, sort_by_date
         ([{}], []),
     ],
 )
-def test_filter_by_state(list, expected):
-    assert filter_by_state(list) == expected
+def test_filter_by_state(test_list: list, expected: str) -> None:
+    assert filter_by_state(test_list) == expected
 
 
 @pytest.mark.parametrize(
@@ -42,5 +42,5 @@ def test_filter_by_state(list, expected):
         )
     ],
 )
-def test_sort_by_date(n, expected):
+def test_sort_by_date(n: list, expected: list) -> None:
     assert sort_by_date(n) == expected
